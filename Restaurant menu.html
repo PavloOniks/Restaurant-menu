@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menus</title>
+    <style>
+        /* Shared styles for all menus based on rubric */
+        .menu-card {
+            width: 400px;           /* Required width */
+            height: 550px;          /* Required height */
+            margin: 20px auto;      /* Margin to separate cards */
+            padding: 30px;          /* Padding for readability */
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+        }
+
+        /* Breakfast Menu Styles */
+        #breakfast {
+            background-image: url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=400&h=550&auto=format&fit=crop');
+            background-position: center; /* Required background property */
+            background-repeat: no-repeat;
+            border: 8px double #ffd700; /* Border requirement */
+        }
+
+        /* Lunch Menu Styles */
+        #lunch {
+            background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&h=550&auto=format&fit=crop');
+            background-position: top;    /* Unique position property */
+            background-repeat: no-repeat;
+            border: 5px solid #ff6347;   /* Border requirement */
+        }
+
+        /* Dinner Menu Styles */
+        #dinner {
+            background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=400&h=550&auto=format&fit=crop');
+            background-position: bottom; /* Unique position property */
+            background-repeat: no-repeat;
+            border: 6px ridge #4b0082;   /* Border requirement */
+        }
+
+        h2 { text-align: center; text-decoration: underline; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 15px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+    <!-- Breakfast Menu -->
+    <div id="breakfast" class="menu-card">
+        <h2>Breakfast</h2>
+        <ul>
+            <li>Classic Pancakes - $10</li>
+            <li>Avocado Toast - $12</li>
+            <li>Fruit Parfait - $8</li>
+            <li>Fresh Orange Juice - $4</li>
+        </ul>
+    </div>
+
+    <!-- Lunch Menu -->
+    <div id="lunch" class="menu-card">
+        <h2>Lunch</h2>
+        <ul>
+            <li>Grilled Chicken Salad - $14</li>
+            <li>Beef Burger & Fries - $15</li>
+            <li>Tomato Basil Soup - $9</li>
+            <li>Iced Lemon Tea - $3</li>
+        </ul>
+    </div>
+
+    <!-- Dinner Menu -->
+    <div id="dinner" class="menu-card">
+        <h2>Dinner</h2>
+        <ul>
+            <li>Pan-Seared Salmon - $24</li>
+            <li>Ribeye Steak - $32</li>
+            <li>Mushroom Risotto - $19</li>
+            <li>Glass of Red Wine - $12</li>
+        </ul>
+    </div>
+
+</body>
+</html>
